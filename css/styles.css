@@ -489,7 +489,6 @@ margin-right: 10px;
 }
 .clients2{
    block-size: border-box;
-   width: 100%;
   }
 /* footer */
 .adress {
@@ -662,7 +661,7 @@ padding: 6px 22px;
     margin: 0px;
 }
 .catego:hover,
-.catego:hover{
+.catego:focus{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .cat-des {
