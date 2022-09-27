@@ -18,8 +18,8 @@
             <a class="logo-link header-logo" href="./index.html"> Web<span class="logo-studio">Studio</span></a>
             <!--Navigation website-->
            <nav>
-               <ul class="nav-header">
-                   <li class="header-item"><a class="studio" href="./index.html">Студія</a></li>
+               <ul class="nav-header style-none">
+                   <li class="header-item"><a class="studio current-studio" href="./index.html">Студія</a></li>
                    <li class="header-item"><a class="portfolio" href="./portfolio.html">Портфоліо</a></li>
                    <li class="header-item"><a class="portfolio" href="#contacts">Контакти</a></li>
                </ul> 
@@ -45,7 +45,14 @@
         <h1 class="hero-titles">
         ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ
         </h1>
-            <button class="button" type="button">Замовити послугу</button>
+            <button class="button" data-modal-open type="button">Замовити послугу</button>
+            <div class="backdrop is-hidden" data-modal>
+                <div class="modal">
+                    <button class="close" data-modal-close>
+                        <svg width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg" class="close-svg"><circle cx="15" cy="15" r="15" fill="#fff"/><circle cx="15" cy="15" r="14.5" stroke="#000" stroke-opacity=".1"/><path d="M21 10.108 19.892 9 15.5 13.392 11.108 9 10 10.108l4.392 4.392L10 18.892 11.108 20l4.392-4.392L19.892 20 21 18.892 16.608 14.5 21 10.108Z" fill="#000"/></svg>     
+                </button>
+                </div>
+            </div>
         </div>
 </section>
 <!--Preference-->
@@ -89,9 +96,15 @@
     <div class="container">
         <h2 class="portfolio-section">Чим ми займаємося</h2>
     <ul class="portfolio-section-li">
-        <li class="preference-li-lis"><img class="prefer" src="./images/portfolio-1.jpg" alt="pragraming" width="370"></li>
-        <li class="preference-li-lis"><img class="prefer" src="./images/portfolio-2.jpg" alt="testing" width="370"></li>
-        <li class="preference-li-lis"><img class="prefer" src="./images/portfolio-3.jpg" alt="visualization" width="370"></li>
+        <li class="preference-li-lis"><div class="pref-anim"><img class="prefer" src="./images/portfolio-1.jpg" alt="pragraming" width="370">
+        <p class="prefer-option">ДЕСКТОПНІ ДОДАТКИ</p>
+        </div></li>
+        <li class="preference-li-lis"><div class="pref-anim"><img class="prefer" src="./images/portfolio-2.jpg" alt="testing" width="370">
+        <p class="prefer-option">МОБІЛЬНІ ДОДАТКИ</p>
+        </div></li>
+        <li class="preference-li-lis"><div class="pref-anim"><img class="prefer" src="./images/portfolio-3.jpg" alt="visualization" width="370">
+        <p class="prefer-option">ДИЗАЙНЕРСЬКІ РІШЕННЯ</p>
+        </div></li>
     </ul>
     </div>
 </section>
@@ -266,5 +279,6 @@
         </div>
     </div>
     </footer>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
